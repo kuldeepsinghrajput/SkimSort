@@ -1,0 +1,192 @@
+
+/*
+        // heap formatiom
+        {
+            int size;
+            struct group** temp;
+            struct group** sta, ** end;
+            struct group** tr;tr = br = base;
+            breakPoint = NULL;
+           
+            do{
+                tr = br = base;
+                breakPoint = NULL;
+
+            do{
+                sta = tr;
+                while (tr < bend && vat(tr++) < vat(tr));
+                if ((size=((tr - sta) / sizeof(struct group**))) == 1) { *br++ = *sta; continue; }
+                if ((*br = (struct  group*)malloc(sizeof(struct group))) != NULL && (temp = (**br).start = (struct group**)malloc(sizeof(struct group*) * size)))
+                {
+                    *temp = *sta;
+                    while (++sta < br)*++temp = *sta;
+                    (**br).end = temp;
+                    breakPoint == NULL ? breakPoint = br++ : ++br;
+                }
+                else freeHeap(base, br);
+            } while (tr < bend);
+
+            bend = --br;
+
+
+            } while (breakPoint == NULL || br == base);
+       }
+// done till heap formation
+
+
+
+
+    }  //heap fromation done
+
+    
+    {
+        int temp;
+        struct group* ae = (struct group*)(array + size-1), * as = (struct group*)array;
+        struct group** er;
+        struct group*** stk;
+        struct group*** sptr,**dptr;
+        log(temp, size);
+        
+        if ((sptr=stk = (struct group***)malloc(sizeof(struct group**) * temp)) == NULL) return freeHeap(base,bend+1);
+        while (bend>=base)
+        {
+           *sptr= er = bend;
+           while (*er<as || *er>ae)*++sptr = er = (**er).start;
+
+           if (*stk == *sptr) { while (--er >= base && (*er >= as && *er <= ae)); ae = *bend; }
+           else if (*(stk + 1) == *(sptr))
+           { 
+               int comparator;
+                   int  * st = (int*)( ***stk).start;
+                   int *end=(int*)(***stk).end;
+                   int* brk;
+                   comparator = base == bend ? vat(bend) : vat(bend - 1);
+                   {
+                       int low = 0, mid, high, size;
+                       high = size = (end - st) / sizeof(int*);
+                       while (low <= high)if (st[mid = (low + high) / 2] <= comparator)low = mid + 1; else high = mid - 1;  while (st[mid] <= comparator && mid <= size)++mid;  brk = st + mid;
+                   }
+
+                            while (end >= brk)
+                           {
+                                temp = *end;
+                                *end-- = *st;
+                                *st++ = temp;
+                            }
+                            st = (int*)*((**er).start);
+                            while (st <-- brk) 
+                            {
+                                temp = *brk;
+                                *brk = *st;
+                                *st++ = temp;
+                            }
+                            
+                            if (brk > (int*)*((**er).end))free(*bend--);
+                            else 
+                            {
+                                int size = (end - st) / sizeof(int*) +1;
+                                int pbrk = (brk - st) / sizeof(int*) + 1;
+                               
+                                if (size & 1)
+                                {
+                                    if (pbrk > size >> 1)
+                                    {
+                                        if (pbrk == 2);
+                                        {
+                                            (*sptr[-2])->start=
+
+                                        }
+
+
+                                    }
+                                   
+                                    //sucesss
+                                }
+                                else
+                                {
+                                    if (pbrk >= size >> 1);//sucess
+
+                                }
+
+
+
+                            }
+
+
+
+           }
+           else
+           
+            {
+                   int* ed, * st, comparator,pcomparator;
+                   st = (int*)( * **(sptr - 1)).start;
+                   ed = (int*)(***(sptr - 1)).end;
+                   pcomparator = vat((**sptr[-1]).start+1);
+                   comparator = vat((**stk[1]).start + 1);
+                   int mc = pcomparator < comparator ? pcomparator : comparator;
+                   while (st < ed && *st <= mc)
+                   {
+                       temp = *(int*)ae;
+                       *(int*)ae = *st;
+                       *st++ = temp;
+                       {
+                           struct group** tart = bend, ** pent;
+
+                           while (*tart<as || *tart>ae) tart = (**(pent = tart)).end;
+
+                           if (!((*(**pent).start)  <as || *((**pent).start) > ae))
+                           {
+                               if ((tart = (struct group**)malloc(sizeof(struct group*) * 2)) == NULL || (tart[0] = (struct group*)malloc(sizeof(struct group))) == NULL)return freeHeap(base, bend + 1);
+                               tart[0]->start = (**pent).start;
+                               tart[0]->end = (struct group**)((int*)((**pent).end) - 1);
+                               tart[1] = *((**pent).end);
+                               (**pent).start = tart;
+                               (**pent).end = tart + 1;
+                           }
+
+                           --ae;
+
+                       }
+
+
+
+
+
+                   }
+
+                   if (st == ed)
+                   {
+                       free(sptr[-1]);
+                       ++((**sptr[-2]).start);
+                   }
+                   else if(*st<pcomparator) 
+                   
+                   {// internal handling
+
+
+
+               }
+
+           }
+           
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+        }
+       
+             
+
+    }
+    
+ */
